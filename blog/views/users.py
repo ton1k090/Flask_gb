@@ -21,4 +21,4 @@ def user_details(user_id: int):
         user_name = USERS[user_id]
     except KeyError:
         raise NotFound(f"User #{user_id} doesn't exist!")
-    return render_template('user/details.html', user_id=user_id, user_name=user_name)
+    return render_template('user/profile.html', user_id=user_id, user_name=user_name)
